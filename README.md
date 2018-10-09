@@ -1,29 +1,30 @@
 ## L2 Grupp arbete?
 
 what is a stack?
+what is a docker-compose?
 
 - port
 - volumes
   What is a swarm?
 
+0. docker swarm init
+
+- save snippet
+
 1. Docker stack
-   add this to a stack file called `my_first_stack_file`
 
 - build Kalleanka loop to image
+- create a stack file called `loop.yml`
+- docker stack deploy -c loop.yml loop
+- docker logs -f
 
-* docker swarm init
-* save snippet
-* create a stack file called `loop.yml`
-* docker stack deploy -c loop.yml loop
-* docker logs -f
-
-1. New Stack with visulizater (https://github.com/dockersamples/docker-swarm-visualizer)
+1. New Stack named `visulizater.yml` with visulizater (https://github.com/dockersamples/docker-swarm-visualizer)
 
 - docker stack deploy -c visualizer.yml visualizer
 - docker stack services visualizer
 - Check in browser
 
-3. Create a stackfile called `wordpress` with wordpress and mysql (https://hub.docker.com/_/wordpress/)
+3. Create a stackfile called `wordpress.yml` with wordpress and mysql (https://hub.docker.com/_/wordpress/)
 
 - Wordpress
 - mysql
