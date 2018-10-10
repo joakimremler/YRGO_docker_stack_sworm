@@ -7,22 +7,33 @@ what is a docker-compose?
 - volumes
   What is a swarm?
 
-0. docker swarm init
+## Assignments
 
-- save snippet
+In this lession we are going to learn about Docker Stack and Sworm. This includes how to start a Sworm cluster and to create and run stacks.
 
-1. Docker stack
+## 1. Initialize docker swarm
 
-- build Kalleanka loop to image
-- create a stack file called `loop.yml`
-- docker stack deploy -c loop.yml loop
-- docker logs -f
+The first thing we should do is to [initialize](https://docs.docker.com/engine/reference/commandline/swarm_init/#extended-description) a docker swarm on our Droplet. You need also to `advertise` your Droplet ip adress.
 
-1. New Stack named `visulizater.yml` with visulizater (https://github.com/dockersamples/docker-swarm-visualizer)
+When you do this you will get a snippet that you can use to connect multiply nodes to this sworm. Save that snippet.
 
-- docker stack deploy -c visualizer.yml visualizer
-- docker stack services visualizer
-- Check in browser
+`docker swarm init --advertise-addr ip_to_droplet`
+
+## 2. Create a Docker Stack
+
+After initialize a Docker sworm we can start using [Docker stack](https://docs.docker.com/get-started/part5/#introduction). Our first stack is going to be our `kalleanka/loop` that we did [build](https://docs.docker.com/engine/reference/commandline/build/#tarball-contexts) in previous lession. If you cannot find it when you type `docker image ls` then you need to build this image. When this has been done create a file called `loop.yml` and add service `loop` with a image called `kalleanka/loop`. You should use stack file version `3.6`.
+
+Run this file with `docker stack deploy -c loop.yml loop`. To see if service is running you can [list](https://docs.docker.com/engine/reference/commandline/service_ls/#related-commands) all services. You can also enter a specific service with `docker stack services <name_of_stack>`.
+
+When you see that all services is running you should watch the [log](https://docs.docker.com/engine/reference/commandline/logs/#usage) from this process with a parameter `-f`.
+
+`docker logs -f <name_of_stack>`
+
+## 3. Visulizater stack
+
+When you have a Docker swarm it is nice to have a tool that can monitor all processes in real time. This is where we can use [Visulizater](https://github.com/dockersamples/docker-swarm-visualizer).
+You should create a new stack file named `visulizater.yml` and add visualizer and export [port](https://docs.docker.com/compose/compose-file/#pid) `5000`. Then you should [deploy](https://docs.docker.com/engine/reference/commandline/deploy/#parent-command) this service with service name `visualizer`.
+Monitor this new service in your browser on your `droplet_ip` on port `5000`.
 
 3. Create a stackfile called `wordpress.yml` with wordpress and mysql (https://hub.docker.com/_/wordpress/)
 
