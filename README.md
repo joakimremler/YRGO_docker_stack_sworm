@@ -50,12 +50,7 @@ Add [phpmyadmin](https://hub.docker.com/r/phpmyadmin/phpmyadmin/) to `wordpress.
 
 ## 6. Scale up and down
 
-Scale up`Kalleanka loop` applications (deploy)(https://docs.docker.com/get-started/part5/#add-a-new-service-and-redeploy)
-
-- scale witout stopping
-- edit in stack.yml add `deploy: replicas: 3`
-
-6. Create a docker swarm on multiply nodes
+Now we should scale up our `Kalleanka loop` application by (deploy)(https://docs.docker.com/get-started/part5/#add-a-new-service-and-redeploy) to `replicas: 3`. This will duplicate our stack container to three replicas. You can scale up and down without restarting service.
 
 ## 6. Loadbalancer
 
