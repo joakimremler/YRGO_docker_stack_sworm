@@ -6,7 +6,7 @@ what is a docker-compose?
 - port
 - volumes
   What is a swarm?
-  [<img src="https://media.giphy.com/media/6AFldi5xJQYIo/giphy.gif" alt="Docker" width="100%">](https://www.docker.com/)
+  [<img src="https://media.giphy.com/media/jYjA6fHBfAZvq/giphy.gif" alt="Docker" width="100%">](https://www.docker.com/)
 
 ## Assignments
 
