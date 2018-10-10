@@ -7,7 +7,7 @@ what is a docker-compose?
 - volumes
   What is a swarm?
 
-[<img src="https://media.giphy.com/media/l41YvpiA9uMWw5AMU/giphy.gif" alt="Deploying to production server" width="100%">](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
+[<img src="https://media.giphy.com/media/14h6tL8OJmAuTm/giphy.gif" alt="Deploying to production server" width="100%">](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
 
 ## Assignments
 
