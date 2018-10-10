@@ -50,15 +50,15 @@ Add [phpmyadmin](https://hub.docker.com/r/phpmyadmin/phpmyadmin/) to `wordpress.
 
 ## 6. Scale up and down
 
-5. Scale up`Kalleanka loop` applications (deploy)(https://docs.docker.com/get-started/part5/#add-a-new-service-and-redeploy)
-   - scale witout stopping
-   - edit in stack.yml add `deploy: replicas: 3`
+Scale up`Kalleanka loop` applications (deploy)(https://docs.docker.com/get-started/part5/#add-a-new-service-and-redeploy)
+
+- scale witout stopping
+- edit in stack.yml add `deploy: replicas: 3`
+
 6. Create a docker swarm on multiply nodes
 
-- copy snippet to new nodes
-- se all stacks
-- se live logs
-- se loadbalancer
-- Nginx
+## 6. Loadbalancer
+
+The final moment in this lession is to [expand](https://docs.docker.com/engine/swarm/swarm-tutorial/add-nodes/) your swarm to multiply Droplets. Do this with the snippet you got in the first assament. There is multiply ways of doing this but eider you create a new Droplet and add that to your cluster och you borrow a Droplet from a classmate. When you have done this watch your `Visualizer` where you can se that Docker swarm acts as a Loadbalancer between multiply Droplets.
 
 https://media.giphy.com/media/jYjA6fHBfAZvq/giphy.gif
