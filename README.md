@@ -49,7 +49,7 @@ Good work! You have now a working wordpress installation, but the problem is now
 
 ## 5. PhpMyAdmin
 
-Add [phpmyadmin](https://hub.docker.com/r/phpmyadmin/phpmyadmin/) to `wordpress.yml` and change port setup to `8181:80`. Deploy `wordpress` stack file and complete `Wordpress` installation.
+Add [phpmyadmin](https://hub.docker.com/r/phpmyadmin/phpmyadmin/) to `wordpress.yml` and change port setup to `8181:80`. Deploy `wordpress` stack file and complete `Wordpress` installation. [Insperation](https://github.com/andreaskoch/dockerized-magento/issues/18).
 
 ## 6. Scale up and down
 
