@@ -15,14 +15,16 @@ In this lession we are going to learn about Docker Stack and Swarm. This include
 
 ## 1. Initialize docker swarm
 
-The first thing we should do is to [initialize](https://docs.docker.com/engine/reference/commandline/swarm_init/#extended-description) a docker swarm on our Droplet. You also need to `advertise` with your Droplet ip adress.
+The first thing we should do is to [initialize](https://docs.docker.com/engine/reference/commandline/swarm_init/#extended-description) a docker swarm on our Droplet. You also need to `advertise` with your Droplet [ip adress](https://www.computerhope.com/unix/uifconfi.htm).
 `docker swarm init --advertise-addr ip_to_droplet`
 
 When you do this you will get a snippet that you can use to connect multiply nodes to this swarm. Save that snippet to later use.
 
 ## 2. Create a Docker Stack
 
-After initialize a Docker swarm we can start using [Docker stack](https://docs.docker.com/get-started/part5/#introduction). Our first stack is going to be our `kalleanka/loop` that we did [build](https://docs.docker.com/engine/reference/commandline/build/#tarball-contexts) in previous lession. If you cannot find it when you type `docker image ls` then you need to build this image. When you got this image you can create a stack file called `loop.yml` and add service `loop` with a image called `kalleanka/loop`. You should use stack file version `3.6`.
+After initialize a Docker swarm we can start using [Docker stack](https://docs.docker.com/get-started/part5/#introduction). Our first stack is going to be our `kalleanka/loop` that we did [build](https://docs.docker.com/engine/reference/commandline/build/#tarball-contexts) in previous lession. If you cannot find it when you type `docker image ls` then you need to rebuild this image.
+
+When you got this image you can create a stack file called `loop.yml` and add service `loop` with a image called `kalleanka/loop`. You should use stack file version `3.6`.
 
 Run this file with `docker stack deploy -c loop.yml loop`. To see if service is running you can [list](https://docs.docker.com/engine/reference/commandline/service_ls/#related-commands) all services. You can also enter a specific service with `docker stack services <name_of_stack>`.
 
