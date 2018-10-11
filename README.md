@@ -67,9 +67,7 @@ Visit your `Visualizer` to see the result. You should now have three running `lo
 
 The final moment in this lession is to [expand](https://docs.docker.com/engine/swarm/swarm-tutorial/add-nodes/) your swarm to multiply Droplets. You can do this with the snippet you got in the first assament. There is multiply ways of doing this but either you create a new Droplet on DigitalOcean and add that to your cluster or you borrow a Droplet from a classmate.
 
-If you create a new Droplet you need to install Docker on it. You can follow our previous lession on how to do this or follow [this](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04) guide.
-
-You may also need to [open ports](https://www.digitalocean.com/community/tutorials/how-to-configure-the-linux-firewall-for-docker-swarm-on-ubuntu-16-04) between Droplets.
+If you create a new Droplet you need to install Docker on it. You can follow our previous lession on how to do this or follow [this](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04) guide. You may also need to [open ports](https://www.digitalocean.com/community/tutorials/how-to-configure-the-linux-firewall-for-docker-swarm-on-ubuntu-16-04) between Droplets.
 
 When you have done this watch your `Visualizer` where you can se that Docker swarm acts as a Loadbalancer between multiply Droplets.
 
