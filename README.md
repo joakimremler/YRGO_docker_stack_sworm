@@ -31,7 +31,10 @@ Run this file with `docker stack deploy -c loop.yml loop`. To see if service is 
 ## 3. Visualizer stack
 
 When you have a Docker swarm it is nice to have a tool that can monitor all processes in real time. This is where we can use [visualizer](https://github.com/dockersamples/docker-swarm-visualizer).
-You should create a new stack file named `visualizer.yml` and add visualizer and export [port](https://docs.docker.com/compose/compose-file/#pid) `5000`. Then you should [deploy](https://docs.docker.com/engine/reference/commandline/deploy/#parent-command) this service with service name `visualizer`.
+You should create a new stack file named `visualizer.yml` and add visualizer and export [port](https://docs.docker.com/compose/compose-file/#pid) `5000`.
+
+Then you should [deploy](https://docs.docker.com/engine/reference/commandline/deploy/#parent-command) this service with service name `visualizer`.
+
 Monitor this new service in your browser on your `droplet_ip` on port `5000`.
 
 ## 3. Stack with Wordpress and mysql
