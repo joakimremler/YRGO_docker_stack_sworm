@@ -45,7 +45,7 @@ When you se that this service is up and running on `Visualizer` you should [remo
 
 ## 4. Save data when container restarts
 
-Good work! You have now a working wordpress installation, but the problem is now when you restart your container your installation will disappear. To fix this we need to store all mysql data inside a [volume](https://docs.docker.com/docker-cloud/apps/stack-yaml-reference/#target_num_containers). So add a volume to `mysql` service inside `wordpress.yml`.
+Good work! You have now a working wordpress installation, but the problem is now when you restart your container your installation will disappear. To fix this we need to store all mysql data inside a [volume](https://docs.docker.com/docker-cloud/apps/stack-yaml-reference/#target_num_containers). So add a volume to [mysql service](https://stackoverflow.com/questions/39175194/docker-compose-persistent-data-mysql) inside `wordpress.yml`.
 
 ## 5. PhpMyAdmin
 

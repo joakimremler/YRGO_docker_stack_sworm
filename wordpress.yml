@@ -1,13 +1,12 @@
 version: '3.1'
 
 services:
-
   wordpress:
     image: wordpress
     restart: always
     # Keep data
     volumes:
-       - db_data:/var/lib/mysql
+      - db_data:/var/lib/mysql
     ports:
       - 8080:80
     environment:
@@ -37,6 +36,5 @@ services:
       replicas: 1
 
 volumes:
-  db_data:
-networks:
-  back:
+  ? db_data
+networks: back:
