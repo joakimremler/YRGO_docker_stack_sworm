@@ -35,7 +35,7 @@ You should create a new stack file named `visualizer.yml` and add visualizer and
 
 Then you should [deploy](https://docs.docker.com/engine/reference/commandline/deploy/#parent-command) this service with service name `visualizer`.
 
-Monitor this new service in your browser on your `droplet_ip` on port `5000`.
+Monitor this `Visualizer` tool by entering your `droplet_ip` and port `5000` in your browsers url.
 
 ## 3. Stack with Wordpress and mysql
 
