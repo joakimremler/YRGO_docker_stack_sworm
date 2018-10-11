@@ -39,5 +39,4 @@ services:
         constraints: [node.role == manager]
 volumes:
   db_data:
-networks: 
-  boilerplate_back:
+
