@@ -7,7 +7,7 @@ what is a docker-compose?
 - volumes
   What is a swarm?
 
-  [<img src="https://media.giphy.com/media/12pzfd9016aYYo/giphy.gif" alt="Docker" width="100%">](https://www.docker.com/)
+  [<img src="https://media.giphy.com/media/12pzfd9016aYYo/giphy.gif" alt="Docker" width="110%">](https://www.docker.com/)
 
 > Docker Swarm or simply Swarm is an open-source container orchestration platform and is the native clustering engine for and by Docker. Any software, services, or tools that run with Docker containers run equally well in Swarm. Also, Swarm utilizes the same command line from Docker.
 
