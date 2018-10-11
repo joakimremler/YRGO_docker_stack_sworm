@@ -51,7 +51,7 @@ Good work! You have now a working wordpress installation, but the problem is now
 
 Add [phpmyadmin](https://hub.docker.com/r/phpmyadmin/phpmyadmin/) to `wordpress.yml` and change port setup to `8181:80`. Deploy `wordpress` stack file and complete `Wordpress` installation. [Insperation](https://github.com/andreaskoch/dockerized-magento/issues/18).
 
-Run `docker stack services wordpress` to se that all services get started. You can also visit your `Visualizer` on your `droplet_ip:5000` in browser.
+Run `docker stack services wordpress` to se that all services get started. You can also visit your `Visualizer` on your `droplet_ip:5000` on your browser.
 
 ## 6. Scale up and down
 
