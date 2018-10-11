@@ -63,7 +63,11 @@ Visit your `Visualizer` to see the result. You should now have three running `lo
 
 ## 6. Loadbalancer
 
-The final moment in this lession is to [expand](https://docs.docker.com/engine/swarm/swarm-tutorial/add-nodes/) your swarm to multiply Droplets. Do this with the snippet you got in the first assament. There is multiply ways of doing this but eider you create a new Droplet and add that to your cluster och you borrow a Droplet from a classmate. When you have done this watch your `Visualizer` where you can se that Docker swarm acts as a Loadbalancer between multiply Droplets.
+The final moment in this lession is to [expand](https://docs.docker.com/engine/swarm/swarm-tutorial/add-nodes/) your swarm to multiply Droplets. You can do this with the snippet you got in the first assament. There is multiply ways of doing this but either you create a new Droplet on Digital Ocen and add that to your cluster or you borrow a Droplet from a classmate.
+
+If you create a new Droplet you need to install Docker on it. You can follow our previous lession on how to do this.
+
+When you have done this watch your `Visualizer` where you can se that Docker swarm acts as a Loadbalancer between multiply Droplets.
 
 https://media.giphy.com/media/jYjA6fHBfAZvq/giphy.gif
 
