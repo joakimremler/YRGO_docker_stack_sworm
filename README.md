@@ -26,11 +26,7 @@ After initialize a Docker swarm we can start using [Docker stack](https://docs.d
 
 When you got this image you can create a [stack file](https://docs.docker.com/get-started/part5/#add-a-new-service-and-redeploy) called `loop.yml` and add service `loop` with a image called `kalleanka/loop`. You should use stack file version `3.6`.
 
-Run this file with `docker stack deploy -c loop.yml loop`. To see if service is running you can [list](https://docs.docker.com/engine/reference/commandline/service_ls/#related-commands) all services. You can also enter a specific service with `docker stack services <name_of_stack>`.
-
-When you see that all services is running you should watch the [logs](https://docs.docker.com/engine/reference/commandline/logs/#usage) from this process with a parameter `-f`.
-
-`docker logs -f <name_of_stack>`
+Run this file with `docker stack deploy -c loop.yml loop`. To see if service is running you can [list](https://docs.docker.com/engine/reference/commandline/service_ls/#related-commands) all services. You can also list a specific service with `docker stack services <name_of_stack>`.
 
 ## 3. Visualizer stack
 
@@ -61,3 +57,9 @@ Now we should scale up our `Kalleanka loop` application by (deploy)(https://docs
 The final moment in this lession is to [expand](https://docs.docker.com/engine/swarm/swarm-tutorial/add-nodes/) your swarm to multiply Droplets. Do this with the snippet you got in the first assament. There is multiply ways of doing this but eider you create a new Droplet and add that to your cluster och you borrow a Droplet from a classmate. When you have done this watch your `Visualizer` where you can se that Docker swarm acts as a Loadbalancer between multiply Droplets.
 
 https://media.giphy.com/media/jYjA6fHBfAZvq/giphy.gif
+
+# OLD
+
+When you see that all services is running you should watch the [logs](https://docs.docker.com/engine/reference/commandline/logs/#usage) from this process with a parameter `-f`.
+
+`docker logs -f <name_of_stack>`
