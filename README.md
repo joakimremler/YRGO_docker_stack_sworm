@@ -41,7 +41,7 @@ Monitor this `Visualizer` tool by entering your `droplet_ip` and port `5000` in 
 
 Create a new stackfile called `wordpress.yml` this should contain a [wordpress](https://hub.docker.com/_/wordpress/) installation and mysql database. [Deploy](https://docs.docker.com/engine/reference/commandline/deploy/#parent-command) this with name `wordpress`.
 
-When you se that this service is up and running on `Visualizer` you should [remove](https://docs.docker.com/engine/reference/commandline/stack_rm/) this stack.
+When you se that this service is up and running on `Visualizer` you should [remove](https://docs.docker.com/engine/reference/commandline/stack_rm/) this (`wordpress`) stack.
 
 ## 4. Save data when container restarts
 
