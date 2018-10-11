@@ -70,9 +70,3 @@ If you create a new Droplet you need to install Docker on it. You can follow our
 When you have done this watch your `Visualizer` where you can se that Docker swarm acts as a Loadbalancer between multiply Droplets.
 
 https://media.giphy.com/media/jYjA6fHBfAZvq/giphy.gif
-
-# OLD
-
-When you see that all services is running you should watch the [logs](https://docs.docker.com/engine/reference/commandline/logs/#usage) from this process with a parameter `-f`.
-
-`docker logs -f <name_of_stack>`
