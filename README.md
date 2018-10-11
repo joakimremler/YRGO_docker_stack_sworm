@@ -69,6 +69,6 @@ The final moment in this lession is to [expand](https://docs.docker.com/engine/s
 
 If you create a new Droplet you need to install Docker on it. You can follow our previous lession on how to do this or follow [this](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04) guide. You may also need to [open ports](https://www.digitalocean.com/community/tutorials/how-to-configure-the-linux-firewall-for-docker-swarm-on-ubuntu-16-04) between Droplets.
 
-When you have done this watch your `Visualizer` where you can se that Docker swarm acts as a Loadbalancer between multiply Droplets.
+When that has been done you need to add `deploy:` and `replicas: 1` to all services in your .yml files that you wish to deploy in cluster. When you have done this watch your `Visualizer` where you can se that Docker swarm acts as a Loadbalancer between multiply Droplets.
 
 https://media.giphy.com/media/jYjA6fHBfAZvq/giphy.gif
