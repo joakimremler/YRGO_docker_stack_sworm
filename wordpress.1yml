@@ -19,8 +19,7 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: example
-    networks:
-      - back
+
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
@@ -30,11 +29,6 @@ services:
     environment:
       PMA_HOST: mysql
       MYSQL_ROOT_PASSWORD: example
-    networks:
-      - back
-    deploy:
-      replicas: 1
 
 volumes:
-  ? db_data
-networks: back:
+  db_data:
