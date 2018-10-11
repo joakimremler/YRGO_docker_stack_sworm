@@ -19,7 +19,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: example
     volumes:
-       - db_data:/var/lib/mysql
+      - db_data:/var/lib/mysql
     deploy:
       replicas: 1
       placement:
@@ -39,3 +39,5 @@ services:
         constraints: [node.role == manager]
 volumes:
   db_data:
+networks: 
+  boilerplate_back:
