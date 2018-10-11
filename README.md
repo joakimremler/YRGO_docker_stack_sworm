@@ -57,7 +57,7 @@ When all services is up you can complete your `Wordpress` installation.
 
 ## 6. Scale up and down
 
-Now we should scale up our `Kalleanka loop` application by (deploy)(https://docs.docker.com/get-started/part5/#add-a-new-service-and-redeploy) to `replicas: 3`. This will duplicate our stack container to three replicas. You can scale up and down without restarting service.
+Now we should scale up our `Kalleanka loop` application by [deploy](https://docs.docker.com/get-started/part5/#add-a-new-service-and-redeploy) to `replicas: 3`. This will duplicate our stack container to three replicas. You can scale up and down without restarting service.
 
 ## 6. Loadbalancer
 
